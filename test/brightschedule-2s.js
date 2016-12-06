@@ -14,7 +14,7 @@ describe("定时亮度 测试",function () {
             method:'POST',
             json:true,
             body:{
-                "interval": 20,
+                "interval": 60,
                 "schedule": [
                     {
                         "brightness": 15,
@@ -35,7 +35,7 @@ describe("定时亮度 测试",function () {
         it("定时亮度设置成功",function (done) {
             request(setbrightschedulejs,function (error,response,body) {
                 expect(response.statusCode).to.equal(200);
-                done();
+                setTimeout(done,1000);
             });
         })
     });
@@ -45,12 +45,12 @@ describe("定时亮度 测试",function () {
         it("3个值完全准确",function (done) {
             request(getbrightscheduleRUL,function (error,response,body) {
                 var getbrightschedule = JSON.parse(body);
-                expect(getbrightschedule.interval).to.equal(20);
+                expect(getbrightschedule.interval).to.equal(60);
                 expect(getbrightschedule.schedule[0].brightness).to.equal(15);
                 expect(getbrightschedule.schedule[1].brightness).to.equal(200);
                 expect(getbrightschedule.schedule[2].brightness).to.equal(80);
                 console.log(getbrightschedule);
-                setTimeout(done,1500);
+                setTimeout(done,500);
             });
         });
     });

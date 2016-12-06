@@ -6,7 +6,7 @@ var request = require("request");
 var expect  = require("chai").expect;
 
 describe("设置语言 200",function () {
-    this.timeout(47000);
+    this.timeout(85000);
     describe("设置语言为：英文",function () {
         var setlocalejs = {
             url:setlocaleURL,
@@ -56,13 +56,32 @@ describe("设置语言 200",function () {
                 "country": "CN"
             }
         };
-        it("恢复中文到盒子成功", function(done) {
+        it("恢复中文到盒子", function(done) {
             request(setlocalejs, function(error, response, body) {
                 expect(response.statusCode).to.equal(200);
-                done();
+                setTimeout(done,40000);
             });
         });
 
+    });
+    describe("获取语言",function () {
+        it("获取语言是否为中文",function (done) {
+            request(getlocaleRUL,function (error,response,body) {
+                expect(response.statusCode).to.equal(200);
+                setTimeout(done,2000);
+            });
+        });
+
+        it("读取语言为中文", function(done) {
+            request(getlocaleRUL, function(error, response, body) {
+                expect(response.statusCode).to.equal(200);
+                var localelanguage = JSON.parse(body);
+                console.log(localelanguage);
+                expect(localelanguage.language).to.equal('zh');
+                expect(localelanguage.country).to.equal("CN");
+                done();
+            });
+        });
     });
 
 });

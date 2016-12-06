@@ -28,11 +28,11 @@ describe("get info", function() {
         });
 
 
-        it("get version = 1.29.02", function(done) {
+        it("get version = 1.29.09", function(done) {
             request(url, function(error, response, body) {
                 console.log(body);
                 var result = JSON.parse(body);
-                expect(result.info.vername).to.equal('1.29.02');
+                expect(result.info.vername).to.equal('1.29.09');
                 console.log(body.time);
                 done();
             });
@@ -128,8 +128,8 @@ describe("get info", function() {
                 console.log(body);
                 var result = JSON.parse(body);
 
-                expect(result.real_height).to.equal(512);
-                expect(result.real_width).to.equal(1280);
+                expect(result.real_height).to.equal(256);
+                expect(result.real_width).to.equal(512);
                 expect(result.fps).to.equal(60);
                 //console.log(body.time)
                 done();

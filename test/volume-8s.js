@@ -8,7 +8,7 @@ var expect  = require("chai").expect;
 
 describe("音量 测试",function () {
     this.timeout(7500);
-    describe("设置音量：10",function () {
+    describe("设置音量：13",function () {
         var setvolumejs = {
             url:setvolumeURL,
             method:'PUT',
@@ -18,7 +18,7 @@ describe("音量 测试",function () {
             }
         };
 
-        it("ledvision读取值为67%",function (done) {
+        it("ledvision读取值为85%",function (done) {
             request(setvolumejs,function (error,response,body) {
                 expect(response.statusCode).to.equal(200);
                 setTimeout(done,700);
