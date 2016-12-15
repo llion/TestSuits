@@ -1,0 +1,39 @@
+{
+              "Programs": {
+                "Program": {
+                  "Pages": [{
+                      "Regions": [
+                          {
+                            "Rect": {
+                              "X": "0",
+                              "Y": "0",
+                              "Width": "256",
+                              "Height": "128"
+                            },
+                            "Items": [{
+                                "Type": "5",
+                                "Text" : "Multi line text test",
+                                "IsScroll": "1"
+                            }]
+                          },
+                          {
+                            "Rect": {
+                              "X": "0",
+                              "Y": "128",
+                              "Width": "256",
+                              "Height": "128"
+                            },
+                            "Items": [{
+                                "Type": "5",
+                                "Text": "Multi line text test",
+                                "LogFont": {
+                                  "lfHeight": "36",
+                                  "lfWidth": "0"
+                                }
+                            }]
+                          }            
+                        ]
+                    }]
+                }
+              }
+            }

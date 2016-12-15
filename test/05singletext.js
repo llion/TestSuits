@@ -10,16 +10,16 @@ describe("单行文本节目发布",function () {
         var singletextjs = {
             method:"POST",
             url:singletextURL,
-            json:true,
             headers: {'Content-Type':'application/json;charset=UTF-8'},
+            json:true,
             body:{
-                "text":"楷体Single Line!",
+                "text":"Single line text test",
                 "x":0,
                 "y":0,
-                "width":512,
+                "width":256,
                 "height":256,
                 "font":{
-                    "name":"隶书",
+                    "name":"楷体",
                     "size":72,
                     "style":{
                         "i":0,
@@ -29,10 +29,10 @@ describe("单行文本节目发布",function () {
                     "color":"0xFFFF0000"
                 },
                 "bgcolor":"0xFF000001",
-                "IsScroll":"0",
-                "IsScrollByTime":"1",
-                "MultiPicInfo":{
-                    "OnePicDuration":"2000"
+                "scroll":{
+                    "dir":"left",
+                    "isconnected":0,
+                    "speed":60
                 }
             }
         };

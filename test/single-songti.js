@@ -3,7 +3,7 @@ var expect = require("chai").expect;
 var request = require("request");
 var apiURL = "http://192.168.42.129/api";
 var singletextURL = apiURL + "/program/singletext";
-
+var singlek = require("../json/single-songti.json");
 
 describe("单行文本节目发布",function () {
     describe("单行文本测试",function () {
@@ -12,29 +12,7 @@ describe("单行文本节目发布",function () {
             url:singletextURL,
             json:true,
             headers: {'Content-Type':'application/json;charset=UTF-8'},
-            body:{
-                "text":"楷体Single Line!",
-                "x":0,
-                "y":0,
-                "width":512,
-                "height":256,
-                "font":{
-                    "name":"隶书",
-                    "size":72,
-                    "style":{
-                        "i":0,
-                        "b":1,
-                        "u":0
-                    },
-                    "color":"0xFFFF0000"
-                },
-                "bgcolor":"0xFF000001",
-                "IsScroll":"0",
-                "IsScrollByTime":"1",
-                "MultiPicInfo":{
-                    "OnePicDuration":"2000"
-                }
-            }
+            body:singlek
         };
 
         it("发布单行文本",function (done) {
