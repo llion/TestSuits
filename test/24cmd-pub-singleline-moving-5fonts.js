@@ -1,9 +1,9 @@
 const request = require("request");
 const expect = require('chai').expect;
 const exec = require('child_process').exec;
-const cmdStrvsn = 'curl ftp://192.168.42.129/program/ -T D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.vsn';
+const cmdStrvsn = 'curl ftp://192.168.42.129/program/ -T Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.vsn';
 const cmdStrmkd = 'curl ftp://192.168.42.129/program/ -X "MKD singleline-moving-5fonts.files"';
-const cmdStrvideo = 'curl ftp://192.168.42.129/program/singleline-moving-5fonts.files/ -T {D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp.mulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp2.mulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp3.mulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp4.mulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp5.mulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp6.mulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp.scrollmulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp2.scrollmulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp3.scrollmulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp4.scrollmulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp5.scrollmulpic,D:/NewPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp6.scrollmulpic}';
+const cmdStrvideo = 'curl ftp://192.168.42.129/program/singleline-moving-5fonts.files/ -T {Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp.mulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp2.mulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp3.mulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp4.mulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp5.mulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp6.mulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp.scrollmulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp2.scrollmulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp3.scrollmulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp4.scrollmulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp5.scrollmulpic,Z:/TestPrograms/singleline-moving-5fonts/packed/singleline-moving-5fonts.files/Temp6.scrollmulpic}';
 var apiURL = "http://192.168.42.129/api";
 var changeVsn = apiURL + "/vsns/sources/lan/vsns/singleline-moving-5fonts.vsn/activated";
 
@@ -43,7 +43,7 @@ describe("发布节目singleline-moving-5fonts",function () {
                 } else {
                     console.log(stdout);
                 }
-                setTimeout(done,5000);
+                done();
             });
         });
     });

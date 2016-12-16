@@ -1,13 +1,13 @@
 const request = require("request");
 const expect = require('chai').expect;
 const exec = require('child_process').exec;
-const cmdStrvsn = 'curl ftp://192.168.42.129/program/ -T Z:/TestPrograms/1088x1920/1088x1920.vsn';
-const cmdStrmkd = 'curl ftp://192.168.42.129/program/ -X "MKD 1088x1920.files"';
-const cmdStrvideo = 'curl ftp://192.168.42.129/program/1088x1920.files/ -T Z:/TestPrograms/1088x1920/1088x1920.files/1088x1920x29fps.mkv';
+const cmdStrvsn = 'curl ftp://192.168.42.129/program/ -T Z:/TestPrograms/wma2/packed/wma2.vsn';
+const cmdStrmkd = 'curl ftp://192.168.42.129/program/ -X "MKD wma2.files"';
+const cmdStrvideo = 'curl ftp://192.168.42.129/program/wma2.files/ -T Z:/TestPrograms/wma2/packed/wma2.files/wma2-30s.wmv';
 var apiURL = "http://192.168.42.129/api";
-var changeVsn = apiURL + "/vsns/sources/lan/vsns/1088x1920.vsn/activated";
+var changeVsn = apiURL + "/vsns/sources/lan/vsns/wma2.vsn/activated";
 
-describe("发布节目video1088x1920",function () {
+describe("发布节目wma2.vsn",function () {
     this.timeout(11000);
     describe("上传vsn文件",function () {
         it("文件上传", function (done) {
@@ -23,7 +23,7 @@ describe("发布节目video1088x1920",function () {
     });
 
     describe("创建文件夹",function () {
-        it("文件夹1088x1920", function (done) {
+        it("文件夹wma2", function (done) {
             exec(cmdStrmkd, function (err, stdout, stderr) {
                 if (err) {
                     console.log('创建文件夹 error:' + stderr);
@@ -36,7 +36,7 @@ describe("发布节目video1088x1920",function () {
     });
 
     describe("上传资源文件",function () {
-        it("资源文件1088x1920x29fps.mkv", function (done) {
+        it("资源文件wma2-30s.wmv", function (done) {
             exec(cmdStrvideo, function (err, stdout, stderr) {
                 if (err) {
                     console.log('上传资源文件 error:' + stderr);
@@ -48,7 +48,7 @@ describe("发布节目video1088x1920",function () {
         });
     });
 
-    describe("切换节目到1088x1920",function () {
+    describe("切换节目到wma2.vsn",function () {
         var changePrograms = {
             url:changeVsn,
             method:'PUT',
@@ -56,7 +56,7 @@ describe("发布节目video1088x1920",function () {
             json:true,
             body:{}
         };
-        it("修改节目到1088x1920.vsn成功",function (done) {
+        it("修改节目到wma2.vsn成功",function (done) {
             request(changePrograms,function (error,response,body) {
                 expect(response.statusCode).to.equal(200);
                 done();
