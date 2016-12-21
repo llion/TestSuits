@@ -5,9 +5,11 @@ var fs = require("fs");
 var apiURL = "http://192.168.42.129/api";
 var networkURL = apiURL + "/network.json";
 var getifstatusURL = apiURL + "/ifstatus.json";
+var cmdPing = "ping 192.168.1.39";
+var exec = require("child_process").exec;
 
 describe('network set ',function () {
-  this.timeout(45000);
+  this.timeout(55000);
     describe('set static ip',function () {
         var setNetWork = {
             method:'POST',
@@ -25,12 +27,13 @@ describe('network set ',function () {
                   "isstatic": 0
                 },
                 {
-                  "dns1": "",
-                  "dns2": "",
+
                   "ips": {
-                    "gateway": "192.168.9.1",
-                    "ip": "192.168.9.38",
-                    "mask": "255.255.255.0"
+                    "gateway": "192.168.1.1",
+                    "ip": "192.168.1.39",
+                    "mask": "255.255.255.0",
+                    "dns1": "192.168.7.1",
+                    "dns2": "192.168.1.1",
                   },
                   "type": "lan",
                   "channel": 0,
@@ -76,14 +79,23 @@ describe('network set ',function () {
                 done();
             });
         });
+        it("ping 192.168.1.39静态ip是否通过",function(done){
+          exec(cmdPing,function(err,stdout,stderr){
+            if(err){
+              console.log("无法ping通ip，固定ip设置失败"+stderr);
+            }else{
+              console.log(stdout);
+            }
+            done();
+          });
+        });
 
-
-        it("设置静态ip = 192.168.9.38 wifiap为c3-dddddd channel:9成功", function(done) {
+        it("设置静态ip = 192.168.1.39 wifiap为c3-dddddd channel:9成功", function(done) {
             request(networkURL, function(error, response, body) {
                 //console.log(body);
                 var networkkevin = JSON.parse(body);
                 console.log(networkkevin);
-                expect(networkkevin.types[2].ips.ip).to.equal("192.168.9.38");
+                expect(networkkevin.types[2].ips.ip).to.equal("192.168.1.39");
                 expect(networkkevin.types[2].enabled).to.equal(1);
                 expect(networkkevin.types[1].SSID).to.equal("c3-dddddd");
                 expect(networkkevin.types[1].channel).to.equal(9);
@@ -113,8 +125,8 @@ describe('network set ',function () {
                   "dns1": "",
                   "dns2": "",
                   "ips": {
-                    "gateway": "192.168.9.1",
-                    "ip": "192.168.9.38",
+                    "gateway": "192.168.1.1",
+                    "ip": "192.168.1.39",
                     "mask": "255.255.255.0"
                   },
                   "type": "lan",
@@ -172,7 +184,7 @@ describe('network set ',function () {
                 expect(ifstatuskevin.types[1].enabled).to.equal(1);
                 expect(ifstatuskevin.types[1].type).to.equal("wifi");
                 expect(ifstatuskevin.types[1].currentap).to.equal("kevin");
-                //expect(ifstatuskevin.types[1].ips.broadcast).to.equal("192.168.9.255");
+                //expect(ifstatuskevin.types[1].ips.broadcast).to.equal("192.168.1.255");
                 done();
             });
         });
