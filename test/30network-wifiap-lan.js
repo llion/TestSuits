@@ -9,12 +9,11 @@ var cmdPing = "ping 192.168.1.33";
 var exec = require("child_process").exec;
 var adbconnect = "adb connect 192.168.42.129";
 var awkEth0ip = "adb shell ip a | grep eth0 | grep inet | awk '{print $2}'";
-var awkwlan0ip = "adb shell ip a | grep wlan0 | grep inet | awk '{print $4}'";
-var networkwifiaplan = require("../json/network-wifiap-lan.json"); 
-var networkTorouterWifi = require("../json/network-to-router-wifi.json");
+var awkwlan0ip = "adb shell ip a | grep wlan0 | grep inet | awk '{print $2}'";
+var networkwifiaplan = require("../json/network-wifiap-lan.json");
 
 describe('network set ',function () {
-  this.timeout(55000);
+  this.timeout(25000);
     describe('set static ip',function () {
         var setNetWork = {
             method:'POST',
@@ -25,7 +24,7 @@ describe('network set ',function () {
         it("set static success",function(done) {
             request(setNetWork,function (error,response,body) {
                 expect(response.statusCode).to.equal(200);
-                setTimeout(done,15000);
+                done();
             });
         });
     });
@@ -34,7 +33,7 @@ describe('network set ',function () {
         it("静态ip，wifiap读取成功", function(done) {
             request(networkURL,function(error, response, body) {
                 expect(response.statusCode).to.equal(200);
-                done();
+                setTimeout(done,5000);
             });
         });
         it("ping 192.168.1.33静态ip是否通过",function(done){
@@ -66,7 +65,20 @@ describe('network set ',function () {
             }else{
               console.log(stdout);
             }
-            done();
+            expect(stdout).to.equal('192.168.1.33/24\n');
+            setTimeout(done,3000);
+          })
+        })
+
+        it("adb shell 读取盒子内部wifiap",function(done){
+          exec(awkwlan0ip,function(err,stdout,stderr){
+            if(err){
+              console.log("无法获取盒子wifiap信息" + stderr);
+            }else{
+              console.log(stdout);
+            }
+            expect(stdout).to.equal('192.168.43.1/24\n');
+            setTimeout(done,3000);
           })
         })
 
@@ -83,64 +95,4 @@ describe('network set ',function () {
             });
         });
     });
-
-    describe('链接到路由器wifi',function () {
-        var setNetWorkwifi = {
-            method:'POST',
-            headers: {'Content-Type':'application/json;charset=UTF-8'},
-            url:'http://192.168.42.129/api/network',
-            body:networkTorouterWifi,
-            json:true};
-        it("return set router wifi",function(done) {
-            request(setNetWorkwifi,function (error,response,body) {
-                expect(response.statusCode).to.equal(200);
-                setTimeout(done,12000);
-            });
-        });
-    });
-
-    describe('读取连接到路由器wifi enabled:1',function () {
-        it("returns get router wifi 200", function(done) {
-            request(networkURL,function(error, response, body) {
-                expect(response.statusCode).to.equal(200);
-                done();
-            });
-        });
-
-        it("adb 链接到盒子",function(done){
-          exec(adbconnect,function(err,stdout,stderr){
-            if(err){
-              console.log("无法连接到盒子" + stderr);
-            }else{
-              console.log(stdout);
-            }
-            setTimeout(done,5000);
-          })
-        })
-
-        it("adb shell 查看盒子wifi网关",function(done){
-          exec(awkwlan0ip,function(err,stdout,stderr){
-            if(err){
-              console.log("链接到路由器wifi出错：" + stderr);
-            }else{
-              console.log(stdout);
-            }
-            expect(stdout).to.equal("192.168.9.255\n");
-            done();
-          })
-        })
-
-        it("连接到wifi路由器kevin成功。 ", function(done) {
-            request(getifstatusURL, function(error, response, body) {
-                var ifstatuskevin = JSON.parse(body);
-                console.log(ifstatuskevin);
-                expect(ifstatuskevin.types[0].enabled).to.equal(0);
-                expect(ifstatuskevin.types[2].enabled).to.equal(0);
-                expect(ifstatuskevin.types[1].enabled).to.equal(1);
-                expect(ifstatuskevin.types[1].type).to.equal("wifi");
-                expect(ifstatuskevin.types[1].currentap).to.equal("kevin");
-                done();
-            });
-        });
-    });
-});
+})

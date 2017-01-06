@@ -1,0 +1,46 @@
+{
+              "types": [
+                {
+                  "SSID": "kevin",
+                  "ips": {},
+                  "pass": "180380580",
+                  "type": "wifi",
+                  "channel": 0,
+                  "enabled": 1,
+                  "isstatic": 0
+                },
+                {
+                  "dns1": "",
+                  "dns2": "",
+                  "ips": {
+                    "gateway": "192.168.1.1",
+                    "ip": "192.168.1.33",
+                    "mask": "255.255.255.0"
+                  },
+                  "type": "lan",
+                  "channel": 0,
+                  "enabled": 0,
+                  "isstatic": 1
+                },
+                {
+                  "SSID": "c3-dddddd",
+                  "ips": {},
+                  "pass": "123456789",
+                  "type": "wifi ap",
+                  "channel": 9,
+                  "enabled": 0,
+                  "isstatic": 0
+                },
+                {
+                  "SSID": "",
+                  "dns1": "",
+                  "dns2": "",
+                  "mac": "",
+                  "pass": "",
+                  "type": "4G",
+                  "channel": 0,
+                  "enabled": 0,
+                  "isstatic": 0
+                }
+              ]
+            }
