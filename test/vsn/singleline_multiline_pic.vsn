@@ -1,0 +1,339 @@
+{
+  "Programs": {
+    "Program": {
+      "Pages": [
+	  {
+         
+          "BgColor": "0xFF000000",
+          "BgFile": {
+            "IsRelative": "1",
+            "FilePath": ".\\singleline_multiline_pic.files\\13486.jpg"
+          },
+          "BgAudios": [
+			{
+              "FileSource": {
+                "IsRelative": "1",
+                "FilePath": ".\\singleline_multiline_pic.files\\abc.mp3"
+              }
+            }
+          ],
+          "Regions": [
+              {
+                "type": "3",
+                "Layer": "3",
+                "Rect": {
+                  "X": "0",
+                  "Y": "0",
+                  "Width": "128",
+                  "Height": "50",
+                  "BorderWidth": "1",
+                  "BorderColor": "0xFF00FF00"
+                },
+                "Items":[
+                    {
+                      "Type": "4",
+                      "BackColor": "0xFF408080",
+                      "Alhpa": "1.000000",
+                      "Duration": "48240",
+                      "BeGlaring": "0",
+                      "IsNeedUpdate": "0",
+                      "UpdateInterval": "10000",
+                      "PlayTimes": "1",
+                      "inEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "outEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "TextColor": "0xFFFFFFFF",
+                      "LogFont": {
+                        "lfHeight": "32",
+                        "lfWidth": "0",
+                        "lfWeight": "700",
+                        "lfItalic": "0",
+                        "lfUnderline": "0",
+                        "lfFaceName": "楷体"
+                      },
+                      "Text": "单行文 本",
+                      "FileSource": {
+                        "IsRelative": "1",
+                        "FilePath": ".\\singleline_multiline_pic.files\\one.txt"
+                      },
+                      "IsFromFile": "1",
+                      "IsScroll": "0",
+                      "IsVertical": "0",
+                      "Speed": "25.000000",
+                      "IsHeadConnectTail": "1",
+                      "WordSpacing": "0",
+                      "RepeatCount": "1",
+                      "IsScrollByTime": "0",
+                      "PlayLength": "300000",
+                      "MoveDir": "0",
+                      "IfSpeedByFrame": "1",
+                      "SpeedByFrame": "3.000000",
+                      "WordType": "0"
+                    },
+                    {
+                      
+                      "Type": "4",
+                     
+                      "BackColor": "0xFF000000",
+                      "Alhpa": "1.000000",
+                      "Duration": "28500",
+                      "BeGlaring": "0",
+                      "IsNeedUpdate": "0",
+                      "UpdateInterval": "10000",
+                      
+                      "PlayTimes": "1",
+                     
+                      "inEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "outEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "ScrollPicInfo": {
+                        
+                      },
+                      "TextColor": "0xFFFFFFFF",
+                      "LogFont": {
+                        "lfHeight": "21",
+                        "lfWidth": "0",
+                        "lfWeight": "400",
+                        "lfItalic": "0",
+                        "lfUnderline": "0",
+                        "lfFaceName": "宋体"
+                      },
+                      "Text": "单行文本",
+                      "FileSource": {
+                        "IsRelative": "1",
+                        "FilePath": ".\\singleline_multiline_pic.files\\one.txt",
+                        "MD5": "35A7BAA2-1214-DB8D-60A3-0F514E8F47B2"
+                      },
+                      "IsFromFile": "1",
+                      "IsScroll": "1",
+                      "IsVertical": "0",
+                      "Speed": "25.000000",
+                      "IsHeadConnectTail": "1",
+                      "WordSpacing": "0",
+                      "RepeatCount": "1",
+                      "IsScrollByTime": "0",
+                      "PlayLength": "300000",
+                      "MoveDir": "0",
+                      "IfSpeedByFrame": "1",
+                      "SpeedByFrame": "3.000000",
+                      "WordType": "0"
+                    }
+                  ]
+                
+              },
+              {
+                
+                "type": "2",
+                "Layer": "2",
+                "Rect": {
+                  "X": "10",
+                  "Y": "10",
+                  "Width": "128",
+                  "Height": "128",
+                  "BorderWidth": "0",
+                  "BorderColor": "0xFFFFFF00"
+                },
+                "Items": [
+                    {
+                      "Type": "5",
+                      "BackColor": "0xFF000000",
+                      "Alhpa": "1.000000",
+                      "Duration": "2000",
+                      "BeGlaring": "0",
+                      "IsNeedUpdate": "0",
+                      "UpdateInterval": "10000",
+                      "PlayTimes": "1",
+                      "inEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "outEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "ScrollPicInfo": {
+                      },
+                      "SourceType": "0",
+                      "TextColor": "0xFF008040",
+                      "LogFont": {
+                        "lfHeight": "16",
+                        "lfWidth": "0",
+                        "lfWeight": "400",
+                        "lfItalic": "0",
+                        "lfUnderline": "0",
+                        "lfFaceName": "宋体"
+                      },
+                      "RepeatCount": "1",
+                      "Speed": "25.000000",
+                      "IsScrollByTime": "0",
+                      "IsScroll": "0",
+                      "PlayLength": "300000",
+                      "IfSpeedByFrame": "1",
+                      "SpeedByFrame": "1.000000",
+                      "centeralAlign": "1",
+                      "FileSource": {
+                        "IsRelative": "1",
+                        "FilePath": ".\\singleline_multiline_pic.files\\one.txt",
+                        "MD5": "35A7BAA2-1214-DB8D-60A3-0F514E8F47B2"
+                      }
+                    },
+                    {
+                      "Type": "5",
+                      "BackColor": "0xFF000000",
+                      "Alhpa": "1.000000",
+                      "Duration": "10640",
+                      "BeGlaring": "0",
+                      "IsNeedUpdate": "0",
+                      "UpdateInterval": "10000",
+                      "PlayTimes": "1",
+                      "inEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "outEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+                      "SourceType": "0",
+                      "TextColor": "0xFFFF80FF",
+                      "LogFont": {
+                        "lfHeight": "16",
+                        "lfWidth": "0",
+                        "lfWeight": "400",
+                        "lfItalic": "0",
+                        "lfUnderline": "0",
+                        "lfFaceName": "宋体"
+                      },
+                      "RepeatCount": "1",
+                      "Speed": "25.000000",
+                      "IsScrollByTime": "0",
+                      "IsScroll": "1",
+                      "PlayLength": "300000",
+                      "IfSpeedByFrame": "1",
+                      "SpeedByFrame": "3.000000",
+                      "centeralAlign": "0",
+                      "FileSource": {
+                        "IsRelative": "1",
+                        "FilePath": ".\\singleline_multiline_pic.files\\one.txt",
+                        "MD5": "35A7BAA2-1214-DB8D-60A3-0F514E8F47B2"
+                      }
+                    }
+                  ]
+                
+              },
+              {
+                "type": "1",
+                "Layer": "1",
+                "Rect": {
+                  "X": "30",
+                  "Y": "50",
+                  "Width": "128",
+                  "Height": "128",
+                  "BorderWidth": "0",
+                  "BorderColor": "0xFFFFFF00"
+                },
+                "Items": [
+                    {
+                      "Type": "2",
+                      "BackColor": "0xFF000000",
+                      "Alhpa": "1.000000",
+                      "Duration": "2000",
+                      "BeGlaring": "0",
+                      "IsNeedUpdate": "0",
+                      "UpdateInterval": "10000",
+                      "PlayTimes": "1",
+                      "inEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "1"
+                      },
+                      "outEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "1"
+                      },
+                      "FileSource": {
+                        "IsRelative": "1",
+                        "FilePath": ".\\singleline_multiline_pic.files\\19613.jpg",
+                        "MD5": "12B111BF-EFEC-AD18-6856-793F72747C68"
+                      },
+                      "ReserveAS": "0"
+                    },
+                    {
+                      "Type": "2",
+                      "BackColor": "0xFF000000",
+                      "Alhpa": "1.000000",
+                      "Duration": "2000",
+                      "BeGlaring": "0",
+                      "IsNeedUpdate": "0",
+                      "UpdateInterval": "10000",
+                      "PlayTimes": "1",
+                      "inEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "1"
+                      },
+                      "outEffect": {
+                        "Type": "1",
+                        "Time": "500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "1"
+                      },
+                      "FileSource": {
+                        "IsRelative": "1",
+                        "FilePath": ".\\singleline_multiline_pic.files\\19614.jpg",
+                        "MD5": "5B8A34E7-FD83-0313-A4CA-A99D8C5E9FF0"
+                      },
+                      "ReserveAS": "0"
+                    }
+                  ]
+                
+              }
+            ]
+          
+        }
+      ]
+    }
+  }
+}

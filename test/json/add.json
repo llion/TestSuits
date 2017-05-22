@@ -1,0 +1,52 @@
+ [{
+    "if_limit_date": false,
+    "if_limit_weekday": false,
+    "limit_date": {
+      "end": "",
+      "start": ""
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "op_time": [
+      "16:15:30" + "00:00:20"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"sleep\"}",
+      "method": 1
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": false,
+    "if_limit_weekday": false,
+    "limit_date": {
+      "end": "2017-01-20",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "op_time": [
+      "16:15:40" +"00:00:20"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"wakeup\"}",
+      "method": 1
+    },
+    "type": "command"
+  },]

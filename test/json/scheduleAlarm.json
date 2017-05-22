@@ -1,0 +1,80 @@
+[
+  {
+    "if_limit_date": false,
+    "if_limit_weekday": false,
+    "limit_date": {
+      "end": "",
+      "start": ""
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "op_time": [
+      "17:27:23"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"sleep\"}",
+      "method": 1
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": false,
+    "if_limit_weekday": false,
+    "limit_date": {
+      "end": "",
+      "start": ""
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "op_time": [
+      "17:28:23"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"wakeup\"}",
+      "method": 1
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": false,
+    "limit_date": {
+      "end": "2017-03-02",
+      "start": "2017-03-02"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "op_time": [
+      "17:28:23"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"reboot\"}",
+      "method": 1
+    },
+    "type": "command"
+  }
+]

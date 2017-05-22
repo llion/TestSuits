@@ -1,0 +1,245 @@
+{
+  "Programs": {
+
+    "Program": {
+    
+      "Pages": [
+	  {
+          "Id": "CE681A71-26DA-4817-845B-6A50AE9046C5",
+          "Name": "普通节目页 1",
+          "Visibale": "1",
+          "Globle": "0",
+          "AppointDuration": "3600000",
+          "PlayOneTime": "16500",
+          "LoopType": "1",
+          "BgColor": "0xFF000000",
+          "BgFile": { "IsRelative": "0" },
+          "Regions": [
+		  {
+              "Id": "E3480308-E452-4897-9D79-D0546F097F11",
+              "Name": "文件窗 1",
+              "type": "1",
+              "Show": "1",
+              "Layer": "1",
+              "Locked": "0",
+              "IsSameAnim": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "0",
+                "Width": "256",
+                "Height": "256",
+                "BorderWidth": "4",
+                "BorderColor": "0xFFFF0000"
+              },
+              "Items": [
+			  
+				  {
+                    "Id": "5237AAB4-E249-4D3C-B430-CAC4BD03650C",
+                    "Name": "Lighthouse.jpg",
+                    "Type": "2",
+                    "Version": "0x00000001",
+                    "BackColor": "0xFF000000",
+                    "Alhpa": "1.000000",
+                    "Duration": "3000",
+                    "BeGlaring": "0",
+                    "IsNeedUpdate": "0",
+                    "UpdateInterval": "10000",
+                    "MirrorOrHandstand": "0",
+                    "PlayTimes": "1",
+                    "effect": {
+                      "IsStatic": "0",
+                      "StayType": "0"
+                    },
+                    "inEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "outEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "MultiPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "ScrollPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "FileSource": {
+                      "IsRelative": "1",
+                      "FilePath": ".\\multipic.files\\47b0af722fce18feb5998548048c1ada.jpg",
+                      "MD5": "8F286989-4542-0E12-7C38-70287CCE0FF3"
+                    },
+                    "ReserveAS": "0"
+                  },
+				  {
+                    "Id": "5237AAB4-E249-4D3C-B430-CAC4BD03650C",
+                    "Name": "Lighthouse.jpg",
+                    "Type": "2",
+                    "Version": "0x00000001",
+                    "BackColor": "0xFF000000",
+                    "Alhpa": "1.000000",
+                    "Duration": "3000",
+                    "BeGlaring": "0",
+                    "IsNeedUpdate": "0",
+                    "UpdateInterval": "10000",
+                    "MirrorOrHandstand": "0",
+                    "PlayTimes": "1",
+                    "effect": {
+                      "IsStatic": "0",
+                      "StayType": "0"
+                    },
+                    "inEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "outEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "MultiPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "ScrollPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "FileSource": {
+                      "IsRelative": "1",
+                      "FilePath": ".\\multipic.files\\0d2d34c93cc0d1e77ebcf044499f2d05.jpg",
+                      "MD5": "8F286989-4542-0E12-7C38-70287CCE0FF3"
+                    },
+                    "ReserveAS": "0"
+                  },
+				  {
+                    "Id": "5237AAB4-E249-4D3C-B430-CAC4BD03650C",
+                    "Name": "Lighthouse.jpg",
+                    "Type": "2",
+                    "Version": "0x00000001",
+                    "BackColor": "0xFF000000",
+                    "Alhpa": "1.000000",
+                    "Duration": "3000",
+                    "BeGlaring": "0",
+                    "IsNeedUpdate": "0",
+                    "UpdateInterval": "10000",
+                    "MirrorOrHandstand": "0",
+                    "PlayTimes": "1",
+                    "effect": {
+                      "IsStatic": "0",
+                      "StayType": "0"
+                    },
+                    "inEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "outEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "MultiPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "ScrollPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "FileSource": {
+                      "IsRelative": "1",
+                      "FilePath": ".\\multipic.files\\050ff4c623c3c27b414d72f6035d996a.jpg",
+                      "MD5": "8F286989-4542-0E12-7C38-70287CCE0FF3"
+                    },
+                    "ReserveAS": "0"
+                  },
+				  {
+                    "Id": "5237AAB4-E249-4D3C-B430-CAC4BD03650C",
+                    "Name": "Lighthouse.jpg",
+                    "Type": "2",
+                    "Version": "0x00000001",
+                    "BackColor": "0xFF000000",
+                    "Alhpa": "1.000000",
+                    "Duration": "3000",
+                    "BeGlaring": "0",
+                    "IsNeedUpdate": "0",
+                    "UpdateInterval": "10000",
+                    "MirrorOrHandstand": "0",
+                    "PlayTimes": "1",
+                    "effect": {
+                      "IsStatic": "0",
+                      "StayType": "0"
+                    },
+                    "inEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "outEffect": {
+                      "Type": "1",
+                      "Time": "500",
+                      "repeatX": "1",
+                      "repeatY": "1",
+                      "IsTran": "1"
+                    },
+                    "MultiPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "ScrollPicInfo": {
+                      "Source": "0",
+                      "PicCount": "0",
+                      "OnePicDuration": "0",
+                      "FilePath": { "IsRelative": "0" }
+                    },
+                    "FileSource": {
+                      "IsRelative": "1",
+                      "FilePath": ".\\multipic.files\\d862c5fd03d60329c28f7678eec58884.jpg",
+                      "MD5": "8F286989-4542-0E12-7C38-70287CCE0FF3"
+                    },
+                    "ReserveAS": "0"
+                  }
+                ]
+              }
+			  ]
+            }
+          ]
+        }
+		
+    }
+  
+}

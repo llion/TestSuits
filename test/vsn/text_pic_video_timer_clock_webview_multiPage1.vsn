@@ -1,0 +1,491 @@
+﻿{
+  "Programs": {
+    "Program": {
+	"Pages": [
+
+		{
+			"BgFile": { 
+						"IsRelative": "1",
+						"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\12638.jpg"	
+					},
+			"BgAudios":[
+					{
+						"FileSource":{
+										"IsRelative": "0",
+										"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage.files\\a.mp3"
+									}
+					},
+					{
+						"FileSource": {
+										"IsRelative": "0",
+										"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage.files\\b.mp3"
+									}
+					}
+		  
+			],
+            "Regions": [
+				{
+					"Layer": "1",
+					"Rect": {
+					  "Width": "256",
+					  "Height": "128"
+					},
+					"Items": [
+						{
+						  "Type": "4",
+						  "BackColor": "0xFF000000",
+						  "BeGlaring": "0",
+						  "TextColor": "0xFFFFFFFF",
+						  "LogFont": {
+								"lfHeight": "32",
+								"lfWidth": "0",
+								"lfWeight": "700",
+								"lfItalic": "0",
+								"lfUnderline": "0",
+								"lfFaceName": "楷体"
+						    },
+						  "Text": "单行文 本",
+						  "FileSource": {
+								"IsRelative": "1",
+								"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\one.txt"
+							},
+						  "IsFromFile": "1",
+						  "IsScroll": "1",
+						  "Speed": "25.000000",
+						  "IsHeadConnectTail": "1",
+						  "RepeatCount": "1",
+						  "IsScrollByTime": "0",
+						  "PlayLength": "300000",
+						  "IfSpeedByFrame": "1",
+						  "SpeedByFrame": "5.000000"
+						}
+					]
+				},
+				{
+					"Layer": "1",
+					"Rect": {
+					  "Width": "256",
+					  "Height": "128"
+					},
+					"Items": [
+						{
+						  "Type": "4",
+						  "BackColor": "0xFF000000",
+						  "Alpha": "1.000000",
+						  "Duration": "5000",
+						  "BeGlaring": "0",
+						  "TextColor": "0xFF00FFFF",
+						  "LogFont": {
+								"lfHeight": "32",
+								"lfWidth": "0",
+								"lfWeight": "700",
+								"lfItalic": "0",
+								"lfUnderline": "0",
+								"lfFaceName": "楷体"
+							},
+							  "Text": "楷体单行文本分页",
+							  "FileSource": {
+									"IsRelative": "0",
+									"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\one.txt"
+								},
+							  "IsFromFile": "0",
+							  "IsScroll": "0"
+						}
+					]
+				}
+            ]
+        },
+		{
+            "Regions": [
+				{
+					"Layer": "1",
+					"Rect": {
+					  "Width": "256",
+					  "Height": "256"
+					},
+					"Items": [
+						{
+						  "Type": "5",
+						  "BackColor": "0xFF000000",
+						  "PlayTimes": "1",
+						  "MultiPicInfo": {
+								"OnePicDuration": "1000"
+							},
+						  "TextColor": "0xFF008040",
+						  "LogFont": {
+								"lfHeight": "16",
+								"lfWidth": "0",
+								"lfWeight": "400",
+								"lfItalic": "0",
+								"lfUnderline": "0",
+								"lfFaceName": "宋体"
+							},
+						  "Text":" 茶桌上摆着两只酒杯，杯子里各装有八成透明如水的液体。
+		那是恰似用精密的计量仪器量过一样精确、标准的八成。两只杯子的形状毫无二致，位置距中心点的距离也像用尺子量过似地毫厘不差。
+		两只杯子从杯子中装的，到外形、位置的过于神经质的均等，总给人一种异乎寻常的感觉。"
+						},
+						{
+						  "Type": "5",
+						  "BackColor": "0xFF0000FF",
+						  "TextColor": "0xFFFF80FF",
+						  "LogFont": {
+								"lfHeight": "16",
+								"lfWeight": "400",
+								"lfItalic": "0",
+								"lfUnderline": "0",
+								"lfFaceName": "宋体"
+							},
+						  "RepeatCount": "1",
+						  "Speed": "25.000000",
+						  "IsScrollByTime": "0",
+						  "IsScroll": "1",
+						  "PlayLength": "300000",
+						  "IfSpeedByFrame": "1",
+						  "SpeedByFrame": "3.000000",
+						  "centeralAlign": "0",
+						  "FileSource": {
+								"IsRelative": "1",
+								"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\one.txt"
+							}
+						}
+					]
+				}
+            ]
+        },
+		{
+            "Regions": [
+				{
+					"Layer": "1",
+					"Rect": {
+					  "X": "0",
+					  "Y": "0",
+					  "Width": "256",
+					  "Height": "256",
+					  "BorderWidth": "1",
+					  "BorderColor": "0xFFFFFFFF"
+					},
+					"Items": [
+						{
+						  "Type": "2",
+						  "BackColor": "0xFF000000",
+						  "Alpha": "0.500000",
+						  "Duration": "1500",
+						  "FileSource": {
+								"IsRelative": "1",
+								"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\13203.jpg"
+							}
+						},
+						{
+						  "Type": "2",
+						  "BackColor": "0xFF000000",
+						  "Alpha": "1.000000",
+						  "Duration": "1500",
+						  "FileSource": {
+								"IsRelative": "1",
+								"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\13398.jpg"
+							}
+						},
+						{
+						  "Type": "2",
+						  "BackColor": "0xFF000000",
+						  "Alpha": "1.000000",
+						  "Duration": "1500",
+						  "inEffect": {
+								"Type": "1",
+								"Time": "500"
+							},
+						  "FileSource": {
+								"IsRelative": "1",
+								"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\13486.jpg"
+							}
+						}
+					]
+				}
+            ]
+        },
+		{
+            "Regions": [
+				{	
+					"Layer": "1",
+					"Rect": {
+					  "X": "0",
+					  "Y": "0",
+					  "Width": "256",
+					  "Height": "256",
+					  "BorderWidth": "0",
+					  "BorderColor": "0xFFFFFF00"
+					},
+					"Items": [
+						{
+							"Type": "3",
+							"BackColor": "0xFF000000",
+							"InOffset": "0",
+							"Volume": "1.000000",
+							"FileSource": {
+								"IsRelative": "1",
+								"FilePath": ".\\text_pic_video_timer_clock_webview_multiPage1.files\\1.mp4"
+							},
+							"ReserveAS": "0"
+						}
+					]
+				}
+            ]
+        },
+        {
+            "Regions": [
+				{
+					"Layer": "1",
+					"Rect": {
+					  "X": "0",
+					  "Y": "0",
+					  "Width": "256",
+					  "Height": "128",
+					  "BorderWidth": "1",
+					  "BorderColor": "0xFFFFFFFF"
+					},
+					"Items": [
+						{
+							"Type": "15",
+							"BackColor": "0xFF000000",
+							"Duration": "5000",
+							"BeToEndTime": "1",
+							"Style": "0",
+							"IsMultiLine": "1",
+							"Prefix": "到**时候还有",
+							"EndDateTime": "2017-12-28 11:33:09",
+							"LogFont": {
+							  "lfHeight": "16",
+							  "lfWidth": "0",
+							  "lfWeight": "0",
+							  "lfItalic": "0",
+							  "lfUnderline": "0",
+							  "lfFaceName": "宋体"
+							},
+							"TextColor": "0xFFFFFFFF",
+							"IsShowDayCount": "1",
+							"DayCountColor": "0xFFFF0000",
+							"IsShowHourCount": "1",
+							"HourCountColor": "0xFFFF0000",
+							"IsShowMinuteCount": "1",
+							"MinuteCountColor": "0xFF00FF00",
+							"IsShowSecondCount": "1",
+							"secondCountColor": "0xFF0000FF"
+						}
+					]
+				},
+				{
+					"Layer": "1",
+					"Rect": {
+					  "X": "0",
+					  "Y": "128",
+					  "Width": "256",
+					  "Height": "128",
+					  "BorderWidth": "0",
+					  "BorderColor": "0xFFFFFF00"
+					},
+					"Items": [
+						{
+							"Type": "15",
+							"BackColor": "0xFF000000",
+							"Duration": "5000",
+							"BeToEndTime": "0",
+							"Style": "1",
+							"IsMultiLine": "1",
+							"Prefix": "正计时",
+							"EndDateTime": "2016-12-28 11:33:09",
+							"LogFont": {
+							  "lfHeight": "16",
+							  "lfWidth": "0",
+							  "lfWeight": "0",
+							  "lfItalic": "0",
+							  "lfUnderline": "0",
+							  "lfFaceName": "宋体"
+							},
+							"TextColor": "0xFFFFFF00",
+							"IsShowDayCount": "1",
+							"DayCountColor": "0xFFFFFF00",
+							"IsShowHourCount": "1",
+							"HourCountColor": "0xFFFF00FF",
+							"IsShowMinuteCount": "1",
+							"MinuteCountColor": "0xFF00FF00",
+							"IsShowSecondCount": "1",
+							"secondCountColor": "0xFF0FF0FF"
+						}
+					]
+				}
+            ]
+        },
+		{
+            "Regions": [
+				{
+					"Rect": {
+						"Width": "256",
+						"Height": "256"
+					},
+					"Items":[
+						{
+							"Type": "9",
+							"BackColor": "0xFFFF0000",
+							"Duration": "5000",
+							"IsAnalog": "0",
+							"TimeZone": "8.000000",
+							"ZoneDescripID": "IDS_TIMEZONE76",
+							"Text": "北京",
+							"DigitalClock": {
+								"DigitalClock": "1",
+								"Flags": "2623",
+								"Name": "宋体",
+								"Weight": "400",
+								"ftSize": "16",
+								"ftColor": "4294967295",
+								"bItalic": "0",
+								"bUnderline": "0"
+							}
+						},
+						{
+							"Type": "9",
+							"BackColor": "0xFF00FF00",
+							"Duration": "5000",
+							"IsAnalog": "0",
+							"TimeZone": "8.000000",
+							"ZoneDescripID": "IDS_TIMEZONE76",
+							"Text": "北京",
+							"DigitalClock": {
+								"DigitalClock": "2",
+								"Flags": "2623",
+								"Name": "宋体",
+								"Weight": "400",
+								"ftSize": "16",
+								"ftColor": "4294967295",
+								"bItalic": "0",
+								"bUnderline": "0"
+							}
+						},
+						{
+							"Type": "9",
+							"BackColor": "0xFF0000FF",
+							"Duration": "5000",
+							"IsAnalog": "0",
+							"TimeZone": "8.000000",
+							"ZoneDescripID": "IDS_TIMEZONE76",
+							"Text": "北京",
+							"DigitalClock": {
+								"DigitalClock": "3",
+								"Flags": "2623",
+								"Name": "宋体",
+								"Weight": "400",
+								"ftSize": "16",
+								"ftColor": "4294967295",
+								"bItalic": "0",
+								"bUnderline": "0"
+							}
+						},
+						{
+						    
+							"Type": "9",
+							"BackColor": "0xFF000000",
+							"Duration": "5000",
+							"IsAnalog": "1",
+							"TimeZone": "8.000000",
+							"ZoneDescripID": "IDS_TIMEZONE76",
+							"Text": "北京",
+							"AnologClock": 
+							{
+							  "Shape": "0",
+							  "Flags": "327680",
+							  "ClockFont": {
+									"FixedText": {
+									  "lfHeight": "16",
+									  "lfWidth": "0",
+									  "lfWeight": "400",
+									  "lfItalic": "0",
+									  "lfUnderline": "0",
+									  "lfFaceName": "宋体"
+									},
+									"FixedTextColor": "4294967295",
+									"NongLi": {
+									  "lfHeight": "16",
+									  "lfWidth": "0",
+									  "lfWeight": "400",
+									  "lfItalic": "0",
+									  "lfUnderline": "0",
+									  "lfFaceName": "宋体"
+									},
+									"NongLiColor": "4294967295",
+									"Date": {
+									  "lfHeight": "16",
+									  "lfWidth": "0",
+									  "lfWeight": "400",
+									  "lfItalic": "0",
+									  "lfUnderline": "0",
+									  "lfFaceName": "宋体"
+									},
+									"WeekColor": "4294967295",
+									"Week": {
+									  "lfHeight": "16",
+									  "lfWidth": "0",
+									  "lfWeight": "400",
+									  "lfItalic": "0",
+									  "lfUnderline": "0",
+									  "lfFaceName": "宋体"
+									},
+									"DateColor": "4294967295",
+									"Time": {
+									  "lfHeight": "16",
+									  "lfWidth": "0",
+									  "lfWeight": "400",
+									  "lfItalic": "0",
+									  "lfUnderline": "0",
+									  "lfFaceName": "System"
+									}
+								},
+							  "HourPinClr": "0xFFFF0000",
+							  "MinutePinClr": "0xFF00FF00",
+							  "SecondPinClr": "0xFF0000FF",
+							  "TextOffset": "0",
+							  "DateOffset": "0",
+							  "LunarOffset": "0",
+							  "WeekOffset": "0"
+							},
+							"HhourScale": {
+							  "Clr": "0xFFFF0000",
+							  "Shape": "1",
+							  "Width": "4",
+							  "Height": "4"
+							},
+							"MinuteScale": {
+							  "Clr": "0xFF00FF00",
+							  "Shape": "0",
+							  "Width": "2",
+							  "Height": "2"
+							}
+						}
+						
+					]
+				}
+            ]
+        },
+        {
+            "Regions": [
+				{
+					"Rect": {
+					  "X": "0",
+					  "Y": "0",
+					  "Width": "256",
+					  "Height": "256"
+					},
+					"Items":[
+						{
+						  "Type": "27",
+						  "BackColor": "0xFF000000",
+						  "Duration":"5000",
+						  "Url":"https://www.baidu.com"
+						}
+					]
+				}
+            ]
+        }
+      ]
+    }
+  }
+}

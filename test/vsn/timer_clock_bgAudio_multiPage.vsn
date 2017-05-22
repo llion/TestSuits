@@ -1,0 +1,221 @@
+{
+  "Programs": {
+    "Program": {
+	"Pages": [
+          {
+		  "BgAudios":[
+		  {
+		 "FileSource": {
+                      "IsRelative": "1",
+                      "FilePath": ".\\timer_clock_bgAudio_multiPage.files\\abc.mp3"
+                    }
+		  }
+		  
+		  ],
+            "Regions": [
+              {
+                "type": "6",
+                "Layer": "1",
+                "Rect": {
+                  "X": "0",
+                  "Y": "0",
+                  "Width": "256",
+                  "Height": "256",
+                  "BorderWidth": "0",
+                  "BorderColor": "0xFFFFFF00"
+                },
+                "Items": [
+				 {
+                    "Type": "15",
+                    "BackColor": "0xFF000000",
+                    "Duration": "5000",
+                    "BeToEndTime": "1",
+                    "Style": "0",
+                    "IsMultiLine": "1",
+                    "Prefix": "到**时候还有",
+					"EndDateTime": "2017-12-28 11:33:09",
+                    "ShowFormat": "0",
+                    "LogFont": {
+                      "lfHeight": "16",
+                      "lfWidth": "0",
+                      "lfWeight": "0",
+                      "lfItalic": "0",
+                      "lfUnderline": "0",
+                      "lfFaceName": "宋体"
+                    },
+                    "TextColor": "0xFFFFFFFF",
+                    "IsShowDayCount": "1",
+                    "DayCountColor": "0xFFFF0000",
+                    "IsShowHourCount": "1",
+                    "HourCountColor": "0xFFFF0000",
+                    "IsShowMinuteCount": "1",
+                    "MinuteCountColor": "0xFF00FF00",
+                    "IsShowSecondCount": "1",
+                    "secondCountColor": "0xFF0000FF"
+                 }
+                ]
+              }
+            ]
+          },
+		  {
+            "Regions": [
+			{
+			"Rect": {
+                  "X": "0",
+                  "Y": "0",
+                  "Width": "256",
+                  "Height": "256",
+                  "BorderWidth": "0",
+                  "BorderColor": "0xFFFFFF00"
+                },
+                "Items":[
+				{
+                    "Type": "9",
+                    "BackColor": "0xFF000000",
+                    "Alhpa": "1.000000",
+                    "Duration": "5000",
+                    "BeGlaring": "0",
+                    "PlayTimes": "1",
+                    "IsAnalog": "0",
+                    "Offset": "0",
+                    "TimeZone": "8.000000",
+                    "ZoneDescripID": "IDS_TIMEZONE76",
+                    "Text": "北京",
+                    "ReserveRatio": "0",
+                    "DigitalClock": {
+                      "DigitalClock": "1",
+                      "Flags": "2623",
+                      "Name": "宋体",
+                      "IsStrikeOut": "0",
+                      "Weight": "400",
+                      "ftSize": "16",
+                      "ftColor": "4294967295",
+                      "bItalic": "0",
+                      "bUnderline": "0"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Regions": [
+			{
+			"Rect": {
+                  "X": "0",
+                  "Y": "0",
+                  "Width": "256",
+                  "Height": "256",
+                  "BorderWidth": "0",
+                  "BorderColor": "0xFFFFFF00"
+                },
+                "Items":[
+				{
+                    "Type": "9",
+                    "BackColor": "0xFF000000",
+                    "Alhpa": "1.000000",
+                    "Duration": "5000",
+                    "BeGlaring": "0",
+                    "PlayTimes": "1",
+                 
+                    "IsAnalog": "1",
+                    "Offset": "0",
+                    "TimeZone": "8.000000",
+                    "ZoneDescripID": "IDS_TIMEZONE76",
+                    "Text": "北京",
+                    "ReserveRatio": "0",
+                    "DigtalClock": {
+                      "DigtalClock": "1",
+                      "Flags": "2623",
+                      "Name": "宋体",
+                      "IsStrikeOut": "0",
+                      "Weight": "400",
+                      "ftSize": "16",
+                      "ftColor": "4294967295",
+                      "bItalic": "0",
+                      "bUnderline": "0",
+                      "bBold": "0",
+                      "CharSet": "134"
+                    },
+                    "AnologClock": {
+                      "Shape": "0",
+                      "Flags": "327680",
+                      "ClockFont": {
+                        "FixedText": {
+                          "lfHeight": "16",
+                          "lfWidth": "0",
+                          "lfWeight": "400",
+                          "lfItalic": "0",
+                          "lfUnderline": "0",
+                          "lfFaceName": "宋体"
+                        },
+                        "FixedTextBold": "0",
+                        "FixedTextColor": "4294967295",
+                        "NongLi": {
+                          "lfHeight": "16",
+                          "lfWidth": "0",
+                          "lfWeight": "400",
+                          "lfItalic": "0",
+                          "lfUnderline": "0",
+                          "lfFaceName": "宋体"
+                        },
+                        "NongLisBold": "0",
+                        "NongLiColor": "4294967295",
+                        "Date": {
+                          "lfHeight": "16",
+                          "lfWidth": "0",
+                          "lfWeight": "400",
+                          "lfItalic": "0",
+                          "lfUnderline": "0",
+                          "lfFaceName": "宋体"
+                        },
+                        "WeekBold": "0",
+                        "WeekColor": "4294967295",
+                        "Week": {
+                          "lfHeight": "16",
+                          "lfWidth": "0",
+                          "lfWeight": "400",
+                          "lfItalic": "0",
+                          "lfUnderline": "0",
+                          "lfFaceName": "宋体"
+                        },
+                        "DateBold": "0",
+                        "DateColor": "4294967295",
+                        "Time": {
+                          "lfHeight": "16",
+                          "lfWidth": "0",
+                          "lfWeight": "400",
+                          "lfItalic": "0",
+                          "lfUnderline": "0",
+                          "lfFaceName": "System"
+                        }
+                      },
+                      "HourPinClr": "0xFFFF0000",
+                      "MinutePinClr": "0xFF00FF00",
+                      "SecondPinClr": "0xFF0000FF",
+                      "TextOffset": "0",
+                      "DateOffset": "0",
+                      "LunarOffset": "0",
+                      "WeekOffset": "0"
+                    },
+                    "HhourScale": {
+                      "Clr": "0xFFFF0000",
+                      "Shape": "1",
+                      "Width": "4",
+                      "Height": "4"
+                    },
+                    "MinuteScale": {
+                      "Clr": "0xFF00FF00",
+                      "Shape": "0",
+                      "Width": "2",
+                      "Height": "2"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+      ]
+    }
+  }
+}

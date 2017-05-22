@@ -1,0 +1,102 @@
+[
+  {
+    "if_limit_date": false,
+    "if_limit_weekday": false,
+    "limit_date": {
+      "end": "",
+      "start": ""
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "op_time": [
+      "17:33:23"
+    ],
+    "operation": {
+      "source": "lan",
+      "vsn": "new.vsn"
+    },
+    "type": "program"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": false,
+    "limit_date": {
+      "end": "2017-03-02",
+      "start": "2017-03-02"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "op_time": [
+      "17:34:23"
+    ],
+    "operation": {
+      "source": "lan",
+      "vsn": "new1.vsn"
+    },
+    "type": "program"
+  },
+  {
+    "if_limit_date": false,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "",
+      "start": ""
+    },
+    "limit_weekday": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "op_time": [
+      "17:35:23"
+    ],
+    "operation": {
+      "source": "lan",
+      "vsn": "new0000.vsn"
+    },
+    "type": "program"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-03-06",
+      "start": "2017-03-02"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "op_time": [
+      "17:36:23"
+    ],
+    "operation": {
+      "source": "usb-synced",
+      "vsn": "newsdsfsdfs.vsn"
+    },
+    "type": "program"
+  }
+]

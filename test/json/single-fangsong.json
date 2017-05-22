@@ -1,0 +1,23 @@
+{
+                "text":"仿宋Single Line!",
+                "x":0,
+                "y":0,
+                "width":512,
+                "height":256,
+                "font":{
+                    "name":"仿宋",
+                    "size":72,
+                    "style":{
+                        "i":0,
+                        "b":1,
+                        "u":0
+                    },
+                    "color":"0xFFFF0000"
+                },
+                "bgcolor":"0xFF000001",
+                "IsScroll":"0",
+                "IsScrollByTime":"1",
+                "MultiPicInfo":{
+                    "OnePicDuration":"2000"
+                }
+            }

@@ -1,0 +1,87 @@
+{
+  "Programs": {
+
+    "Program": {
+    
+      "Pages": [
+	  {
+          "Regions": [
+		  {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "0",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "1",
+                "BorderColor": "0xFFFFFF00"
+              },
+              "Items": [
+			  {
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "Alhpa": "1.000000",
+                  "PlayTimes": "1",
+                 
+                  "MultiPicInfo": {
+                    "OnePicDuration": "6000"
+                  },
+                  "TextColor": "0xFF00ccFF",
+                  "LogFont": {
+                    "lfHeight": "16",
+                    "lfWeight": "0",
+                    "lfItalic": "0",
+                    "lfUnderline": "0",
+                    "lfFaceName": "宋体"
+                  },
+                  "Text":" Thanks! So the bug is in your code there. Every call made to runQry has the same pool (this is fine), but you add a listener on it every time. You only need to make 11 calls and you get that warning. You just need to stop adding the same listener over and over again.",
+                  "IsScroll": "0",
+                  "centeralAlign": "2"
+                  }
+
+                ]
+              },
+              {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "128",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "1",
+                "BorderColor": "0xFFFFFF00"
+              },
+              "Items": [
+			  
+				  {
+                  
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "TextColor": "0xFFFFFFFF",
+                  "LogFont": {
+                    "lfHeight": "16",
+                    "lfWeight": "0",
+                    "lfItalic": "0",
+                    "lfUnderline": "0",
+                    "lfFaceName": "楷体"
+                  },
+                  "Text":"In fact, it seems like all you're trying to do is make it an error for getConnect to queue; there is an option that will do this for you.",
+                  "RepeatCount": "1",
+                  "Speed": "25.000000",
+                  "IsScrollByTime": "0",
+                  "IsScroll": "1",
+                  "PlayLenth": "300000",
+                  "IfSpeedByFrame": "1",
+                  "SpeedByFrame": "3.000000"
+                  }
+
+                ]
+              }
+			  ]
+            }
+          ]
+        }
+		
+    }
+  
+}

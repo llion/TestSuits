@@ -1,0 +1,1 @@
+﻿温度：CLT_JSON{"url":"http://www.fjqxfw121.com/zhnyLedInter/service.do?p={%22h%22:{%22p%22:%22%22},%22b%22:{%22gre_device_query_led%22:{%22base_pk%22:%22201502041000221%22}}}","filter":"$['b']['gre_device_query_led']['infos']['sub_infos']['tem']"}CLT_JSON

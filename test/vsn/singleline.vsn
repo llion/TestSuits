@@ -1,0 +1,125 @@
+{
+  "Programs": {
+
+    "Program": {
+    
+      "Pages": [
+	  {
+          "Regions": [
+		  {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "0",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "1",
+                "BorderColor": "0xFFFFFF00"
+              },
+              "Items": [
+					{
+                  
+					  "Type": "4",
+					  "BackColor": "0xFFFF0000",
+					  "TextColor": "0xFFFFFFFF",
+					  "LogFont": {
+						"lfHeight": "16",
+						"lfWeight": "0",
+						"lfItalic": "1",
+						"lfUnderline": "0",
+						"lfFaceName": "宋体"
+					  },
+					  "inEffect": {
+                        "Type": "1",
+                        "Time": "1500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+					  "outEffect": {
+                        "Type": "1",
+                        "Time": "1500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+					  "IsFromFile":"1",
+					  "Text":"单行文本",
+					  "RepeatCount": "1",
+					  "Speed": "25.000000",
+					  "IsScrollByTime": "0",
+					  "IsScroll": "1",
+					  "PlayLenth": "300000",
+					  "IfSpeedByFrame": "1",
+					  "SpeedByFrame": "3.000000",
+					  "FileSource": {
+							"IsRelative": "1",
+							"FilePath": ".\\singleline.files\\one.txt"
+						}
+					}
+
+                ]
+              },
+              {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "128",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "1",
+                "BorderColor": "0xFFFFFF00"
+              },
+              "Items": [
+			  
+				  {
+                  
+                  "Type": "4",
+                  "BackColor": "0xFF000000",
+                  "TextColor": "0xFFFFFF00",
+                  "LogFont": {
+                    "lfHeight": "16",
+                    "lfWeight": "0",
+                    "lfItalic": "1",
+                    "lfUnderline": "0",
+                    "lfFaceName": "宋体"
+                  },
+				  "inEffect": {
+                        "Type": "1",
+                        "Time": "1500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+					  "outEffect": {
+                        "Type": "1",
+                        "Time": "2500",
+                        "repeatX": "1",
+                        "repeatY": "1",
+                        "IsTran": "0"
+                      },
+				  "IsFromFile":"2",
+                  "Text":"singleline....",
+                  "RepeatCount": "1",
+                  "Speed": "25.000000",
+                  "IsScrollByTime": "0",
+                  "IsScroll": "0",
+                  "PlayLenth": "300000",
+                  "IfSpeedByFrame": "1",
+                  "SpeedByFrame": "3.000000",
+				  "FileSource": {
+								"IsRelative": "1",
+								"FilePath": ".\\singleline.files\\one.txt"
+							}
+                  }
+
+                ]
+              }
+			  ]
+            }
+          ]
+        }
+		
+    }
+  
+}

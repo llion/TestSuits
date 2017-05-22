@@ -5,7 +5,7 @@ var fs = require("fs");
 var apiURL = "http://192.168.42.129/api";
 var networkURL = apiURL + "/network.json";
 var getifstatusURL = apiURL + "/ifstatus.json";
-var cmdPing = "ping 192.168.1.33";
+var cmdPing = "ping 192.168.0.33";
 var exec = require("child_process").exec;
 var adbconnect = "adb connect 192.168.42.129";
 var awkEth0ip = "adb shell ip a | grep eth0 | grep inet | awk '{print $2}'";
@@ -37,7 +37,7 @@ describe('network set ',function () {
                 done();
             });
         });
-        it("ping 192.168.1.33静态ip是否通过",function(done){
+        it("ping 192.168.0.33静态ip是否通过",function(done){
           exec(cmdPing,function(err,stdout,stderr){
             if(err){
               console.log("无法ping通ip，固定ip设置失败"+stderr);
@@ -70,13 +70,13 @@ describe('network set ',function () {
           })
         })
 
-        it("设置静态ip = 192.168.1.33 wifiap为c3-dddddd channel:9成功", function(done) {
+        it("设置静态ip = 192.168.0.33 wifiap为c4-0457 channel:9成功", function(done) {
             request(networkURL, function(error, response, body) {
                 var networkkevin = JSON.parse(body);
                 console.log(networkkevin);
-                expect(networkkevin.types[2].ips.ip).to.equal("192.168.1.33");
+                expect(networkkevin.types[2].ips.ip).to.equal("192.168.0.33");
                 expect(networkkevin.types[2].enabled).to.equal(1);
-                expect(networkkevin.types[1].SSID).to.equal("c3-dddddd");
+                expect(networkkevin.types[1].SSID).to.equal("c4-0457");
                 expect(networkkevin.types[1].channel).to.equal(9);
                 expect(networkkevin.types[1].enabled).to.equal(1);
                 done();
@@ -125,12 +125,12 @@ describe('network set ',function () {
             }else{
               console.log(stdout);
             }
-            expect(stdout).to.equal("192.168.9.255\n");
+            expect(stdout).to.equal("192.168.1.255\n");
             done();
           })
         })
 
-        it("连接到wifi路由器kevin成功。 ", function(done) {
+        it("连接到wifi路由器dd-wrt-01-2.4G成功。 ", function(done) {
             request(getifstatusURL, function(error, response, body) {
                 var ifstatuskevin = JSON.parse(body);
                 console.log(ifstatuskevin);
@@ -138,7 +138,7 @@ describe('network set ',function () {
                 expect(ifstatuskevin.types[2].enabled).to.equal(0);
                 expect(ifstatuskevin.types[1].enabled).to.equal(1);
                 expect(ifstatuskevin.types[1].type).to.equal("wifi");
-                expect(ifstatuskevin.types[1].currentap).to.equal("kevin");
+                expect(ifstatuskevin.types[1].currentap).to.equal("dd-wrt-01-2.4G");
                 done();
             });
         });

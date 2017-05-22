@@ -1,0 +1,87 @@
+﻿{
+  "Programs": {
+
+    "Program": {
+    
+      "Pages": [
+	  {
+          "Regions": [
+		  {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "0",
+                "Width": "128",
+                "Height": "256",
+                "BorderWidth": "2",
+                "BorderColor": "0xFF00EE00"
+              },
+              "Items": [
+			  {
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "Alhpa": "1.000000",
+                  "PlayTimes": "1",
+                 
+                  "MultiPicInfo": {
+                    "OnePicDuration": "6000"
+                  },
+                  "TextColor": "0xFF00ccFF",
+                  "LogFont": {
+                    "lfHeight": "30",
+                    "lfWeight": "0",
+                    "lfItalic": "1",
+                    "lfUnderline": "0",
+                    "lfFaceName": "宋体"
+                  },
+                  "Text":" 这一话属于过渡章节，并没有什么大冲突发生，整话都在做铺垫，算是暴风雨前的宁静。",
+                  "IsScroll": "0",
+                  "centeralAlign": "2"
+                  }
+
+                ]
+              },
+              {
+              "Layer": "1",
+              "Rect": {
+                "X": "128",
+                "Y": "0",
+                "Width": "128",
+                "Height": "256",
+                "BorderWidth": "4",
+                "BorderColor": "0xFFB3EE3A"
+              },
+              "Items": [
+			  
+				  {
+                  
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "TextColor": "0xFFFFFF00",
+                  "LogFont": {
+                    "lfHeight": "28",
+                    "lfWeight": "0",
+                    "lfItalic": "1",
+                    "lfUnderline": "0",
+                    "lfFaceName": "楷体"
+                  },
+                  "Text":"不过从一些小的细节来看，本话之后，即将迎来四皇篇第一个高潮！",
+                  "RepeatCount": "1",
+                  "Speed": "25.000000",
+                  "IsScrollByTime": "0",
+                  "IsScroll": "1",
+                  "PlayLenth": "300000",
+                  "IfSpeedByFrame": "1",
+                  "SpeedByFrame": "3.000000"
+                  }
+
+                ]
+              }
+			  ]
+            }
+          ]
+        }
+		
+    }
+  
+}

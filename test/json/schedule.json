@@ -1,0 +1,183 @@
+[
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-01-20",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "op_time": [
+      "16:15:00"
+    ],
+    "operation": {
+      "source": "lan",
+      "vsn": "new0000.vsn"
+    },
+    "type": "program"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-01-20",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "op_time": [
+      "16:15:30"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"sleep\"}",
+      "method": 1
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-01-20",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "op_time": [
+      "16:15:40"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"wakeup\"}",
+      "method": 1
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-01-27",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "op_time": [
+      "16:16:00"
+    ],
+    "operation": {
+      "author_url": "api/action",
+      "content": "{\"command\":\"reboot\"}",
+      "method": 1
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-01-25",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "op_time": [
+      "16:21:30"
+    ],
+    "operation": {
+      "author_url": "api/volume",
+      "content": "{\"musicvolume\":6}",
+      "method": 2
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-01-27",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "op_time": [
+      "17:52:30"
+    ],
+    "operation": {
+      "author_url": "api/inputmode",
+      "content": "{\"inputmode\":\"hdmi\"}",
+      "method": 2
+    },
+    "type": "command"
+  },
+  {
+    "if_limit_date": true,
+    "if_limit_weekday": true,
+    "limit_date": {
+      "end": "2017-01-28",
+      "start": "2017-01-12"
+    },
+    "limit_weekday": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "op_time": [
+      "17:52:40"
+    ],
+    "operation": {
+      "author_url": "api/inputmode",
+      "content": "{\"inputmode\":\"dvi\"}",
+      "method": 2
+    },
+    "type": "command"
+  }
+]

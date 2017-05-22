@@ -1,0 +1,90 @@
+{
+  "Programs": {
+
+    "Program": {
+    
+      "Pages": [
+	  {
+          "Regions": [
+		  {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "0",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "3",
+                "BorderColor": "0xFFFF0000"
+              },
+              "Items": [
+			  {
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "Alhpa": "1.000000",
+                  "PlayTimes": "1",
+                 
+                  "MultiPicInfo": {
+                    "OnePicDuration": "6000"
+                  },
+                  "TextColor": "0xFFFF0000",
+                  "LogFont": {
+                    "lfHeight": "40",
+                    "lfWeight": "1",
+                    "lfItalic": "1",
+                    "lfUnderline": "1",
+                    "lfFaceName": "宋体"
+                  },
+                  "Text":" at libcore.io.IoBridge.connectErrno(IoBridge.java:159)
+					at libcore.io.IoBridge.connect(IoBridge.java:112)
+					at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+					at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)",
+                  "IsScroll": "0",
+                  "centeralAlign": "1"
+                  }
+
+                ]
+              },
+              {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "128",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "4",
+                "BorderColor": "0xFFFFFF00"
+              },
+              "Items": [
+			  
+				  {
+                  
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "TextColor": "0xFFFFFFFF",
+                  "LogFont": {
+                    "lfHeight": "32",
+                    "lfWeight": "0",
+                    "lfItalic": "0",
+                    "lfUnderline": "0",
+                    "lfFaceName": "楷体"
+                  },
+                  "Text":"多行文本",
+                  "RepeatCount": "1",
+                  "Speed": "25.000000",
+                  "IsScrollByTime": "0",
+                  "IsScroll": "1",
+                  "PlayLenth": "300000",
+                  "IfSpeedByFrame": "1",
+                  "SpeedByFrame": "1.000000"
+                  }
+
+                ]
+              }
+			  ]
+            }
+          ]
+        }
+		
+    }
+  
+}

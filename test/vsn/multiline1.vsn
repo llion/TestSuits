@@ -1,0 +1,87 @@
+﻿{
+  "Programs": {
+
+    "Program": {
+    
+      "Pages": [
+	  {
+          "Regions": [
+		  {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "0",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "3",
+                "BorderColor": "0xFFFFFF00"
+              },
+              "Items": [
+			  {
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "Alhpa": "1.000000",
+                  "PlayTimes": "1",
+                 
+                  "MultiPicInfo": {
+                    "OnePicDuration": "6000"
+                  },
+                  "TextColor": "0xFF00ccFF",
+                  "LogFont": {
+                    "lfHeight": "128",
+                    "lfWeight": "0",
+                    "lfItalic": "1",
+                    "lfUnderline": "0",
+                    "lfFaceName": "宋体"
+                  },
+                  "Text":"第三空间峰会上看见会计师的那放空间",
+                  "IsScroll": "1",
+                  "centeralAlign": "2"
+                  }
+
+                ]
+              },
+              {
+              "Layer": "1",
+              "Rect": {
+                "X": "0",
+                "Y": "128",
+                "Width": "256",
+                "Height": "128",
+                "BorderWidth": "4",
+                "BorderColor": "0xFFFFFF00"
+              },
+              "Items": [
+			  
+				  {
+                  
+                  "Type": "5",
+                  "BackColor": "0xFF000000",
+                  "TextColor": "0xFFFFFFFF",
+                  "LogFont": {
+                    "lfHeight": "128",
+                    "lfWeight": "0",
+                    "lfItalic": "1",
+                    "lfUnderline": "0",
+                    "lfFaceName": "黑体"
+                  },
+                  "Text":"多行文本",
+                  "RepeatCount": "1",
+                  "Speed": "25.000000",
+                  "IsScrollByTime": "0",
+                  "IsScroll": "1",
+                  "PlayLenth": "300000",
+                  "IfSpeedByFrame": "1",
+                  "SpeedByFrame": "3.000000"
+                  }
+
+                ]
+              }
+			  ]
+            }
+          ]
+        }
+		
+    }
+  
+}
